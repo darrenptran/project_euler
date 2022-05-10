@@ -1,10 +1,9 @@
 digits = int(input('Enter number of digits: '))
 
-def largest_product(n):
-    
+
+def largest_product(x):
     lprod = 1
     num = int(digits * '9')
-
     for i in range(num, 0, -1):
         for j in range(num, 0, -1):
             prod = i * j
@@ -18,6 +17,7 @@ def largest_product(n):
                 continue
 
     return lprod
+
 
 print(largest_product(digits))
     
